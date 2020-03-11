@@ -52,10 +52,10 @@ class RegisterVC: UIViewController {
     
     @IBAction func registerMobilePressed(_ sender: Any) {
         
-        /*if Auth.auth().currentUser != nil{
+        if Auth.auth().currentUser != nil{
             print("already registerd please login ")
            
-        }else{*/
+        }else{
         
         SVProgressHUD.show()
         guard let phoneNum = mobileNumTxt.text else {
@@ -77,7 +77,7 @@ class RegisterVC: UIViewController {
                 print(error!.localizedDescription)
             }
             }
-       //}
+       }
     }
     
     
