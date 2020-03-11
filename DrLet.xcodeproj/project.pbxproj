@@ -3,10 +3,15 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5BC3203B3D8CA9273C6E6729 /* Pods_DrLet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 363B1BF764E52B2527C69CDE /* Pods_DrLet.framework */; };
+		68BA9DE3260F5D555AA5A7D1 /* Pods_DrLetUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14A9EEF5069D0A8CBAD5A5DA /* Pods_DrLetUITests.framework */; };
+		710F6F594F97B8EF5E7BB5A1 /* Pods_DrLetTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 472FAD2D53E258816DCBEAB4 /* Pods_DrLetTests.framework */; };
+		C79C7E692417088200D9BF81 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79C7E682417088200D9BF81 /* LoginVC.swift */; };
+		C79C7E6B2418322700D9BF81 /* CurrentUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79C7E6A2418322700D9BF81 /* CurrentUser.swift */; };
 		C7F2D8AA24158E58004854F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F2D8A924158E58004854F4 /* AppDelegate.swift */; };
 		C7F2D8AC24158E58004854F4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F2D8AB24158E58004854F4 /* ViewController.swift */; };
 		C7F2D8AF24158E58004854F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7F2D8AD24158E58004854F4 /* Main.storyboard */; };
@@ -14,6 +19,12 @@
 		C7F2D8B424158E5B004854F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7F2D8B224158E5B004854F4 /* LaunchScreen.storyboard */; };
 		C7F2D8BF24158E5B004854F4 /* DrLetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F2D8BE24158E5B004854F4 /* DrLetTests.swift */; };
 		C7F2D8CA24158E5B004854F4 /* DrLetUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F2D8C924158E5B004854F4 /* DrLetUITests.swift */; };
+		C7F2D8D824158EB7004854F4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C7F2D8D724158EB7004854F4 /* GoogleService-Info.plist */; };
+		C7F2D8DB241595A4004854F4 /* Ios_BackDrop.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C7F2D8DA241595A4004854F4 /* Ios_BackDrop.jpg */; };
+		C7F2D8DD24159F7D004854F4 /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F2D8DC24159F7D004854F4 /* RegisterVC.swift */; };
+		C7F2D8DF2415A47C004854F4 /* Extension+Keboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F2D8DE2415A47C004854F4 /* Extension+Keboard.swift */; };
+		C7F2D8E12415B334004854F4 /* SaveUserVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F2D8E02415B334004854F4 /* SaveUserVC.swift */; };
+		C7F2D8E324162BD3004854F4 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F2D8E224162BD3004854F4 /* Reachability.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +45,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		11FB02DBD084B1E485B69B76 /* Pods-DrLetTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DrLetTests.debug.xcconfig"; path = "Target Support Files/Pods-DrLetTests/Pods-DrLetTests.debug.xcconfig"; sourceTree = "<group>"; };
+		14A9EEF5069D0A8CBAD5A5DA /* Pods_DrLetUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DrLetUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1695A00AC7FA4C3A0A5212E3 /* Pods-DrLet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DrLet.release.xcconfig"; path = "Target Support Files/Pods-DrLet/Pods-DrLet.release.xcconfig"; sourceTree = "<group>"; };
+		363B1BF764E52B2527C69CDE /* Pods_DrLet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DrLet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		472FAD2D53E258816DCBEAB4 /* Pods_DrLetTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DrLetTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5BC8174CDA1CB58322A6D177 /* Pods-DrLetTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DrLetTests.release.xcconfig"; path = "Target Support Files/Pods-DrLetTests/Pods-DrLetTests.release.xcconfig"; sourceTree = "<group>"; };
+		67DB068DD4FF492865E079EE /* Pods-DrLetUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DrLetUITests.debug.xcconfig"; path = "Target Support Files/Pods-DrLetUITests/Pods-DrLetUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		8320F0A626CABA900B36112F /* Pods-DrLetUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DrLetUITests.release.xcconfig"; path = "Target Support Files/Pods-DrLetUITests/Pods-DrLetUITests.release.xcconfig"; sourceTree = "<group>"; };
+		C79C7E682417088200D9BF81 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		C79C7E6A2418322700D9BF81 /* CurrentUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentUser.swift; sourceTree = "<group>"; };
 		C7F2D8A624158E58004854F4 /* DrLet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrLet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7F2D8A924158E58004854F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C7F2D8AB24158E58004854F4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +68,13 @@
 		C7F2D8C524158E5B004854F4 /* DrLetUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DrLetUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7F2D8C924158E5B004854F4 /* DrLetUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrLetUITests.swift; sourceTree = "<group>"; };
 		C7F2D8CB24158E5B004854F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C7F2D8D724158EB7004854F4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C7F2D8DA241595A4004854F4 /* Ios_BackDrop.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Ios_BackDrop.jpg; sourceTree = "<group>"; };
+		C7F2D8DC24159F7D004854F4 /* RegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
+		C7F2D8DE2415A47C004854F4 /* Extension+Keboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+Keboard.swift"; sourceTree = "<group>"; };
+		C7F2D8E02415B334004854F4 /* SaveUserVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveUserVC.swift; sourceTree = "<group>"; };
+		C7F2D8E224162BD3004854F4 /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		EC59BC68A4F52A3423DEDEA0 /* Pods-DrLet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DrLet.debug.xcconfig"; path = "Target Support Files/Pods-DrLet/Pods-DrLet.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5BC3203B3D8CA9273C6E6729 /* Pods_DrLet.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				710F6F594F97B8EF5E7BB5A1 /* Pods_DrLetTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,19 +98,46 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68BA9DE3260F5D555AA5A7D1 /* Pods_DrLetUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		831D9AA9A93145929C52690B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EC59BC68A4F52A3423DEDEA0 /* Pods-DrLet.debug.xcconfig */,
+				1695A00AC7FA4C3A0A5212E3 /* Pods-DrLet.release.xcconfig */,
+				11FB02DBD084B1E485B69B76 /* Pods-DrLetTests.debug.xcconfig */,
+				5BC8174CDA1CB58322A6D177 /* Pods-DrLetTests.release.xcconfig */,
+				67DB068DD4FF492865E079EE /* Pods-DrLetUITests.debug.xcconfig */,
+				8320F0A626CABA900B36112F /* Pods-DrLetUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		9F1AECBF2A7ED21AD7DE648C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				363B1BF764E52B2527C69CDE /* Pods_DrLet.framework */,
+				472FAD2D53E258816DCBEAB4 /* Pods_DrLetTests.framework */,
+				14A9EEF5069D0A8CBAD5A5DA /* Pods_DrLetUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C7F2D89D24158E58004854F4 = {
 			isa = PBXGroup;
 			children = (
 				C7F2D8A824158E58004854F4 /* DrLet */,
+				C7F2D8D92415958A004854F4 /* Media */,
 				C7F2D8BD24158E5B004854F4 /* DrLetTests */,
 				C7F2D8C824158E5B004854F4 /* DrLetUITests */,
 				C7F2D8A724158E58004854F4 /* Products */,
+				831D9AA9A93145929C52690B /* Pods */,
+				9F1AECBF2A7ED21AD7DE648C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,10 +156,17 @@
 			children = (
 				C7F2D8A924158E58004854F4 /* AppDelegate.swift */,
 				C7F2D8AB24158E58004854F4 /* ViewController.swift */,
+				C7F2D8DC24159F7D004854F4 /* RegisterVC.swift */,
+				C7F2D8E224162BD3004854F4 /* Reachability.swift */,
+				C7F2D8DE2415A47C004854F4 /* Extension+Keboard.swift */,
 				C7F2D8AD24158E58004854F4 /* Main.storyboard */,
+				C79C7E6A2418322700D9BF81 /* CurrentUser.swift */,
+				C7F2D8E02415B334004854F4 /* SaveUserVC.swift */,
 				C7F2D8B024158E5B004854F4 /* Assets.xcassets */,
 				C7F2D8B224158E5B004854F4 /* LaunchScreen.storyboard */,
 				C7F2D8B524158E5B004854F4 /* Info.plist */,
+				C7F2D8D724158EB7004854F4 /* GoogleService-Info.plist */,
+				C79C7E682417088200D9BF81 /* LoginVC.swift */,
 			);
 			path = DrLet;
 			sourceTree = "<group>";
@@ -125,6 +189,14 @@
 			path = DrLetUITests;
 			sourceTree = "<group>";
 		};
+		C7F2D8D92415958A004854F4 /* Media */ = {
+			isa = PBXGroup;
+			children = (
+				C7F2D8DA241595A4004854F4 /* Ios_BackDrop.jpg */,
+			);
+			path = Media;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +204,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C7F2D8CE24158E5B004854F4 /* Build configuration list for PBXNativeTarget "DrLet" */;
 			buildPhases = (
+				D18CB1A1A8532E23CF5050EB /* [CP] Check Pods Manifest.lock */,
 				C7F2D8A224158E58004854F4 /* Sources */,
 				C7F2D8A324158E58004854F4 /* Frameworks */,
 				C7F2D8A424158E58004854F4 /* Resources */,
+				18C06C2F960AC5A8635C007C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -149,6 +223,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C7F2D8D124158E5B004854F4 /* Build configuration list for PBXNativeTarget "DrLetTests" */;
 			buildPhases = (
+				6648E6F8810A37483DF69266 /* [CP] Check Pods Manifest.lock */,
 				C7F2D8B624158E5B004854F4 /* Sources */,
 				C7F2D8B724158E5B004854F4 /* Frameworks */,
 				C7F2D8B824158E5B004854F4 /* Resources */,
@@ -167,6 +242,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C7F2D8D424158E5B004854F4 /* Build configuration list for PBXNativeTarget "DrLetUITests" */;
 			buildPhases = (
+				326482C067F9BDB5B3C311AC /* [CP] Check Pods Manifest.lock */,
 				C7F2D8C124158E5B004854F4 /* Sources */,
 				C7F2D8C224158E5B004854F4 /* Frameworks */,
 				C7F2D8C324158E5B004854F4 /* Resources */,
@@ -230,6 +306,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C7F2D8B424158E5B004854F4 /* LaunchScreen.storyboard in Resources */,
+				C7F2D8DB241595A4004854F4 /* Ios_BackDrop.jpg in Resources */,
+				C7F2D8D824158EB7004854F4 /* GoogleService-Info.plist in Resources */,
 				C7F2D8B124158E5B004854F4 /* Assets.xcassets in Resources */,
 				C7F2D8AF24158E58004854F4 /* Main.storyboard in Resources */,
 			);
@@ -251,13 +329,105 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		18C06C2F960AC5A8635C007C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DrLet/Pods-DrLet-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DrLet/Pods-DrLet-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DrLet/Pods-DrLet-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		326482C067F9BDB5B3C311AC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DrLetUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6648E6F8810A37483DF69266 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DrLetTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D18CB1A1A8532E23CF5050EB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DrLet-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C7F2D8A224158E58004854F4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7F2D8DD24159F7D004854F4 /* RegisterVC.swift in Sources */,
 				C7F2D8AC24158E58004854F4 /* ViewController.swift in Sources */,
+				C79C7E692417088200D9BF81 /* LoginVC.swift in Sources */,
+				C7F2D8E324162BD3004854F4 /* Reachability.swift in Sources */,
+				C7F2D8DF2415A47C004854F4 /* Extension+Keboard.swift in Sources */,
 				C7F2D8AA24158E58004854F4 /* AppDelegate.swift in Sources */,
+				C79C7E6B2418322700D9BF81 /* CurrentUser.swift in Sources */,
+				C7F2D8E12415B334004854F4 /* SaveUserVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -430,6 +600,7 @@
 		};
 		C7F2D8CF24158E5B004854F4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC59BC68A4F52A3423DEDEA0 /* Pods-DrLet.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -448,6 +619,7 @@
 		};
 		C7F2D8D024158E5B004854F4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1695A00AC7FA4C3A0A5212E3 /* Pods-DrLet.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -466,6 +638,7 @@
 		};
 		C7F2D8D224158E5B004854F4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11FB02DBD084B1E485B69B76 /* Pods-DrLetTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -487,6 +660,7 @@
 		};
 		C7F2D8D324158E5B004854F4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5BC8174CDA1CB58322A6D177 /* Pods-DrLetTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -508,6 +682,7 @@
 		};
 		C7F2D8D524158E5B004854F4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 67DB068DD4FF492865E079EE /* Pods-DrLetUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -528,6 +703,7 @@
 		};
 		C7F2D8D624158E5B004854F4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8320F0A626CABA900B36112F /* Pods-DrLetUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

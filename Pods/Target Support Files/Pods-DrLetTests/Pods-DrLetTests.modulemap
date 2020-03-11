@@ -1,0 +1,6 @@
+framework module Pods_DrLetTests {
+  umbrella header "Pods-DrLetTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

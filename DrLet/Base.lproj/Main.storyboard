@@ -1,24 +1,377 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="lTO-Be-ylX">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--DrLet-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DrLet" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Ios_BackDrop.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="BOV-V1-GRh">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="oKB-2U-OqV">
+                                <rect key="frame" x="0.0" y="469" width="375" height="98"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="deQ-0H-FPq">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="45"/>
+                                        <fontDescription key="fontDescription" name="HoeflerText-BlackItalic" family="Hoefler Text" pointSize="33"/>
+                                        <state key="normal" title="Login">
+                                            <color key="titleColor" red="1" green="0.43529411759999997" blue="0.0" alpha="0.95716502569999995" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="DGk-K9-RXb" kind="show" identifier="gotoLogin" id="ZjR-dx-FCg"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z0N-FS-aWU">
+                                        <rect key="frame" x="0.0" y="53" width="375" height="45"/>
+                                        <fontDescription key="fontDescription" name="HoeflerText-BlackItalic" family="Hoefler Text" pointSize="33"/>
+                                        <state key="normal" title="Register">
+                                            <color key="titleColor" red="1" green="0.43529411759999997" blue="0.0" alpha="0.95716502569999995" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="pwU-2y-Ywh" kind="show" identifier="gotoRegister" id="Bg6-D8-0Bt"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="BOV-V1-GRh" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="4Kd-1D-Jlj"/>
+                            <constraint firstItem="BOV-V1-GRh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Rwy-8U-CgG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="oKB-2U-OqV" secondAttribute="bottom" constant="100" id="bp3-jr-JBG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="BOV-V1-GRh" secondAttribute="bottom" id="hZc-9e-de8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="BOV-V1-GRh" secondAttribute="trailing" id="rB0-qK-58h"/>
+                            <constraint firstItem="oKB-2U-OqV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="syb-yx-8tv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="oKB-2U-OqV" secondAttribute="trailing" id="wcm-IQ-wc4"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" title="DrLet" id="Eaa-8u-Q0q"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="783" y="-327"/>
+        </scene>
+        <!--RegisterVC-->
+        <scene sceneID="kuL-Hb-KGZ">
+            <objects>
+                <viewController id="pwU-2y-Ywh" customClass="RegisterVC" customModule="DrLet" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HGL-iC-BPh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Ios_BackDrop.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="uaB-Wx-mfm">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="S6d-5W-a4L">
+                                <rect key="frame" x="15" y="239" width="345" height="178"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="OTP" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9Ty-jN-ouR">
+                                        <rect key="frame" x="0.0" y="0.0" width="345" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mDL-6o-22d">
+                                        <rect key="frame" x="0.0" y="48" width="345" height="32"/>
+                                        <fontDescription key="fontDescription" name="HoeflerText-BlackItalic" family="Hoefler Text" pointSize="20"/>
+                                        <state key="normal" title="Verify  OTP">
+                                            <color key="titleColor" red="1" green="0.43529411759999997" blue="0.0" alpha="0.95716502569999995" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="verifyOTPPressed:" destination="pwU-2y-Ywh" eventType="touchUpInside" id="4Af-7m-h9M"/>
+                                            <segue destination="65p-DH-gua" kind="show" identifier="gotoUserDetails" id="DUA-qf-0eZ"/>
+                                        </connections>
+                                    </button>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Mobile Number first" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="k5m-2z-iyC">
+                                        <rect key="frame" x="0.0" y="98" width="345" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="if4-oU-Jjs">
+                                        <rect key="frame" x="0.0" y="146" width="345" height="32"/>
+                                        <fontDescription key="fontDescription" name="HoeflerText-BlackItalic" family="Hoefler Text" pointSize="20"/>
+                                        <state key="normal" title="Register">
+                                            <color key="titleColor" red="1" green="0.43529411759999997" blue="0.0" alpha="0.95716502569999995" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="registerMobilePressed:" destination="pwU-2y-Ywh" eventType="touchUpInside" id="czr-fR-44b"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="uaB-Wx-mfm" firstAttribute="top" secondItem="HGL-iC-BPh" secondAttribute="top" id="022-Db-gBY"/>
+                            <constraint firstItem="S6d-5W-a4L" firstAttribute="leading" secondItem="t7v-Ky-wTT" secondAttribute="leading" constant="15" id="28N-0f-An1"/>
+                            <constraint firstItem="t7v-Ky-wTT" firstAttribute="bottom" secondItem="S6d-5W-a4L" secondAttribute="bottom" constant="250" id="CAb-3f-MaE"/>
+                            <constraint firstItem="t7v-Ky-wTT" firstAttribute="bottom" secondItem="uaB-Wx-mfm" secondAttribute="bottom" id="Dp2-rZ-vML"/>
+                            <constraint firstItem="t7v-Ky-wTT" firstAttribute="trailing" secondItem="uaB-Wx-mfm" secondAttribute="trailing" id="Ygo-el-la5"/>
+                            <constraint firstItem="t7v-Ky-wTT" firstAttribute="trailing" secondItem="S6d-5W-a4L" secondAttribute="trailing" constant="15" id="lt0-e8-lPO"/>
+                            <constraint firstItem="uaB-Wx-mfm" firstAttribute="leading" secondItem="t7v-Ky-wTT" secondAttribute="leading" id="nCa-nR-sgp"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="t7v-Ky-wTT"/>
+                    </view>
+                    <connections>
+                        <outlet property="mobileNumTxt" destination="k5m-2z-iyC" id="Tgu-E4-Za0"/>
+                        <outlet property="otpBtn" destination="mDL-6o-22d" id="JFy-pl-Hkt"/>
+                        <outlet property="otpTxt" destination="9Ty-jN-ouR" id="7Op-EU-PK6"/>
+                        <outlet property="registerBtn" destination="if4-oU-Jjs" id="V71-sk-6o1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h65-fF-m4T" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1564" y="146"/>
+        </scene>
+        <!--LoginVC-->
+        <scene sceneID="0Sh-bQ-8lK">
+            <objects>
+                <viewController id="DGk-K9-RXb" customClass="LoginVC" customModule="DrLet" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jie-Qy-bTc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="4Zk-mL-yry">
+                                <rect key="frame" x="20" y="529" width="335" height="88"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone Number" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RqM-Od-Sae">
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fBN-m7-qI5">
+                                        <rect key="frame" x="0.0" y="55" width="335" height="33"/>
+                                        <fontDescription key="fontDescription" name="HoeflerText-BlackItalic" family="Hoefler Text" pointSize="21"/>
+                                        <state key="normal" title="Login">
+                                            <color key="titleColor" red="1" green="0.43529411759999997" blue="0.0" alpha="0.95716502569999995" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="loginBtnPressed:" destination="DGk-K9-RXb" eventType="touchUpInside" id="6cG-6t-yK4"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="xRW-VE-h6E">
+                                <rect key="frame" x="20" y="74" width="335" height="348.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="USER Details" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SbX-qz-dZz">
+                                        <rect key="frame" x="102" y="0.0" width="131" height="20"/>
+                                        <fontDescription key="fontDescription" name="HoeflerText-BlackItalic" family="Hoefler Text" pointSize="20"/>
+                                        <color key="textColor" red="1" green="0.43529411759999997" blue="0.0" alpha="0.95716502569999995" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="First Name : Venkat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GhU-2c-UQR">
+                                        <rect key="frame" x="93" y="34" width="149" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Last Name : Madira" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pId-Il-blB">
+                                        <rect key="frame" x="93.5" y="68.5" width="148" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone Number : +449999999999" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m39-ev-aNf">
+                                        <rect key="frame" x="35.5" y="103" width="264.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email : Madira@gmail.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="azo-8b-6dJ">
+                                        <rect key="frame" x="67.5" y="137.5" width="200.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Post Code : SL1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="74w-vi-Xmh">
+                                        <rect key="frame" x="108" y="172" width="119.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="iza-5R-Elw">
+                                        <rect key="frame" x="92.5" y="206.5" width="150" height="142"/>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="0.60000002379999995" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="4Zk-mL-yry" firstAttribute="leading" secondItem="fRb-NQ-Pkf" secondAttribute="leading" constant="20" id="F83-1V-Ph5"/>
+                            <constraint firstItem="fRb-NQ-Pkf" firstAttribute="bottom" secondItem="4Zk-mL-yry" secondAttribute="bottom" constant="50" id="JqD-5k-KHY"/>
+                            <constraint firstItem="fRb-NQ-Pkf" firstAttribute="trailing" secondItem="xRW-VE-h6E" secondAttribute="trailing" constant="20" id="Kxz-7o-exs"/>
+                            <constraint firstItem="xRW-VE-h6E" firstAttribute="leading" secondItem="fRb-NQ-Pkf" secondAttribute="leading" constant="20" id="LFo-VB-ojF"/>
+                            <constraint firstItem="4Zk-mL-yry" firstAttribute="top" secondItem="xRW-VE-h6E" secondAttribute="bottom" constant="106.5" id="NNa-t4-gHJ"/>
+                            <constraint firstItem="fRb-NQ-Pkf" firstAttribute="trailing" secondItem="4Zk-mL-yry" secondAttribute="trailing" constant="20" id="hYr-IC-TFM"/>
+                            <constraint firstItem="xRW-VE-h6E" firstAttribute="top" secondItem="fRb-NQ-Pkf" secondAttribute="top" constant="10" id="ngf-m6-1l5"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="fRb-NQ-Pkf"/>
+                    </view>
+                    <connections>
+                        <outlet property="emailLbl" destination="azo-8b-6dJ" id="QX5-7r-2Fo"/>
+                        <outlet property="firstnameLbl" destination="GhU-2c-UQR" id="Der-rv-Lr5"/>
+                        <outlet property="lastnameLbl" destination="pId-Il-blB" id="BGE-N9-B1v"/>
+                        <outlet property="phoneNumLbl" destination="m39-ev-aNf" id="LYO-fG-h1G"/>
+                        <outlet property="phoneNumberTxt" destination="RqM-Od-Sae" id="52e-SQ-V6I"/>
+                        <outlet property="postCodeLbl" destination="74w-vi-Xmh" id="vnm-fU-s5U"/>
+                        <outlet property="profileImageview" destination="iza-5R-Elw" id="2uH-E6-Fcb"/>
+                        <outlet property="userDetailsLbl" destination="SbX-qz-dZz" id="qwK-EC-hYr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gso-Pj-bF7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1564" y="-560"/>
+        </scene>
+        <!--Save UserVC-->
+        <scene sceneID="nL5-3S-hMC">
+            <objects>
+                <viewController id="65p-DH-gua" customClass="SaveUserVC" customModule="DrLet" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aAC-d3-yVB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Ios_BackDrop.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="k05-On-T6g">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="4Z4-wT-mPd">
+                                <rect key="frame" x="20" y="152" width="335" height="265"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Xy2-Ec-WWd">
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Last Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QU4-D3-h2m">
+                                        <rect key="frame" x="0.0" y="39" width="335" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone Number " textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5YF-we-KJK">
+                                        <rect key="frame" x="0.0" y="78" width="335" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email " textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lz2-aB-oi8">
+                                        <rect key="frame" x="0.0" y="117" width="335" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Location - Postcode " textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QKz-xp-Acm">
+                                        <rect key="frame" x="0.0" y="156" width="335" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qsg-bv-KQI">
+                                        <rect key="frame" x="0.0" y="195" width="335" height="31"/>
+                                        <fontDescription key="fontDescription" name="HoeflerText-Black" family="Hoefler Text" pointSize="19"/>
+                                        <state key="normal" title="Upload Photo">
+                                            <color key="titleColor" red="1" green="0.43529411759999997" blue="0.0" alpha="0.95716502569999995" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="uploadPhoto:" destination="65p-DH-gua" eventType="touchUpInside" id="NyL-RV-ffD"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gpJ-uD-w1U">
+                                        <rect key="frame" x="0.0" y="235" width="335" height="30"/>
+                                        <fontDescription key="fontDescription" name="HoeflerText-BlackItalic" family="Hoefler Text" pointSize="18"/>
+                                        <state key="normal" title="Save">
+                                            <color key="titleColor" red="1" green="0.43529411759999997" blue="0.0" alpha="0.95716502569999995" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="saveUserDetailsPressed:" destination="65p-DH-gua" eventType="touchUpInside" id="Xec-xE-fvz"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User Details" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IbK-St-89L">
+                                <rect key="frame" x="127" y="105" width="121" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="121" id="ahF-w2-F1K"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HoeflerText-Black" family="Hoefler Text" pointSize="20"/>
+                                <color key="textColor" red="1" green="0.43529411759999997" blue="0.0" alpha="0.95716502569999995" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ePS-uH-j1x">
+                                <rect key="frame" x="115" y="445" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="aAz-7M-QG1"/>
+                                    <constraint firstAttribute="height" constant="150" id="msR-M0-0cp"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="k05-On-T6g" firstAttribute="leading" secondItem="FA0-wC-aSh" secondAttribute="leading" id="5WC-i2-6R6"/>
+                            <constraint firstItem="k05-On-T6g" firstAttribute="top" secondItem="FA0-wC-aSh" secondAttribute="top" id="7qz-aI-dRl"/>
+                            <constraint firstItem="ePS-uH-j1x" firstAttribute="leading" secondItem="FA0-wC-aSh" secondAttribute="leading" constant="115" id="FFx-wy-VKx"/>
+                            <constraint firstItem="FA0-wC-aSh" firstAttribute="trailing" secondItem="4Z4-wT-mPd" secondAttribute="trailing" constant="20" id="Jxo-6m-KbR"/>
+                            <constraint firstItem="FA0-wC-aSh" firstAttribute="bottom" secondItem="4Z4-wT-mPd" secondAttribute="bottom" constant="250" id="MN0-rw-Spq"/>
+                            <constraint firstItem="FA0-wC-aSh" firstAttribute="bottom" secondItem="ePS-uH-j1x" secondAttribute="bottom" constant="72" id="WOs-8O-gfg"/>
+                            <constraint firstItem="FA0-wC-aSh" firstAttribute="bottom" secondItem="k05-On-T6g" secondAttribute="bottom" id="dNT-PL-mWL"/>
+                            <constraint firstItem="IbK-St-89L" firstAttribute="leading" secondItem="FA0-wC-aSh" secondAttribute="leading" constant="127" id="ddO-kC-xhB"/>
+                            <constraint firstItem="4Z4-wT-mPd" firstAttribute="leading" secondItem="FA0-wC-aSh" secondAttribute="leading" constant="20" id="eaw-wc-ewF"/>
+                            <constraint firstItem="IbK-St-89L" firstAttribute="top" secondItem="FA0-wC-aSh" secondAttribute="top" constant="41" id="tCt-Qk-Vmt"/>
+                            <constraint firstItem="FA0-wC-aSh" firstAttribute="trailing" secondItem="IbK-St-89L" secondAttribute="trailing" constant="127" id="xNd-oB-3Sh"/>
+                            <constraint firstItem="FA0-wC-aSh" firstAttribute="trailing" secondItem="k05-On-T6g" secondAttribute="trailing" id="zzY-1B-7f3"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="FA0-wC-aSh"/>
+                    </view>
+                    <connections>
+                        <outlet property="emailTxt" destination="lz2-aB-oi8" id="llz-rT-Xpe"/>
+                        <outlet property="firstNameTxt" destination="Xy2-Ec-WWd" id="Fp0-tV-FhL"/>
+                        <outlet property="imagePreview" destination="ePS-uH-j1x" id="5BE-8u-XPi"/>
+                        <outlet property="lastNameTxt" destination="QU4-D3-h2m" id="OAA-UM-MxC"/>
+                        <outlet property="phoneNumTxt" destination="5YF-we-KJK" id="mBf-NP-VGY"/>
+                        <outlet property="postCodeTxt" destination="QKz-xp-Acm" id="e95-7U-6F3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="F67-V3-Asq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2374" y="145"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="rYt-yr-eJE">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="lTO-Be-ylX" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="vF9-bf-fua">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="zTx-ew-zuL"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZqH-IY-tUy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-98" y="-328"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Ios_BackDrop.jpg" width="640" height="960"/>
+    </resources>
 </document>
